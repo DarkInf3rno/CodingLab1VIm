@@ -64,7 +64,7 @@ int main() {
     int reEndHour;
     int reEndMin;
 //Provides an interface for users to pass in values to the setTimeRange function. 
-   cout << endl << "Now let's book an appoinment. Please note error checking is not enabled for this section. Have fun with the numbers and enjoy typing in whatever numbers you would like." << endl << endl;
+   cout << endl << "Lets book another appointment. " << endl << endl;
 
     cout << "From the displayed open time slots, what is the hour of the starting time: "; 
     cin >> reStartHour;

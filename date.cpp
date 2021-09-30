@@ -130,7 +130,7 @@ using namespace std;
       
 
   }
-
+   //Checks using our equal friend function that was implemented earlier to see if the day that was inputed is equal to the holiday
       void Date::isHoliday(){
   //All our constant dates for the Holidays that we use to check
       const Date Sept30 = Date(9, 30);
@@ -139,7 +139,7 @@ using namespace std;
 
     
       
-      //Checks using our equal friend function that was implemented earlier
+   
         if (equal(Sept30, Date(month, day))) {
         cout << "This is a holiday, no appointments can be booked. Aborting.." << endl;
         exit(1);
@@ -153,9 +153,9 @@ using namespace std;
       
       }
       
-
+ // Uses a switch statement, taking in month and then printing out all the info in that month.
       void Date::printDays(){
-      // Uses a switch statement, taking in month and then printing out all the info in that month.
+     
           switch(month){
           case 9: {
           Date September[22];
@@ -185,10 +185,11 @@ using namespace std;
 
 
       }
+       // Using a for loop, we can print out all the time intervals
+        // We use it by checking which values in the array are false, and print if it is false
      void Date::printFreeTimeSlots()
       {
-        // Using a for loop, we can print out all the time intervals
-        // We use it by checking which values in the array are false, and print if it is false
+       
         int hour;
           bool appointed[48] = {false};
           
@@ -209,12 +210,11 @@ using namespace std;
                }
              }
       }
-
-      void Date::printAppointedTimeSlots(){
-        // Using a for loop, we can print out all the time intervals
+     // Using a for loop, we can print out all the time intervals
         // We use it by checking which values in the array are true, and print if it is true
-        
-        //bool appointed[48] = {false};
+      void Date::printAppointedTimeSlots(){
+   
+       
 
         int hour;
         for (int i = 0; i < 48; i++){
