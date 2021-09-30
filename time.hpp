@@ -29,12 +29,15 @@ class TimeRange {
         //Functions 
           //Constructors
             TimeRange(int inBeginHour, int inBeginMinute, int inEndHour, int inEndMinute);
+            TimeRange();
+          //Function functions
 
-          //FUnction functions
-
-            void getTimeRange(); //Gets the time range from the class
+          void getTimeRange(); //Gets the time range from the class
 
             //Functions to help getTimeRange. Also provide more precision
+                void input();
+                void input(int inBeginHour, int inBeginMinute, int inEndHour, int inEndMinute); 
+                void output();
                 int getBeginMin(); 
                 int getBeginHour(); 
 
